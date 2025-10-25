@@ -1,10 +1,10 @@
-# 🌈 Ember's Color Vision Test
+# 🌈 Color Vision Test
 
-An Animal Crossing-inspired color vision test webapp for testing deuteranomaly colorblindness, featuring authentic AC assets and scientific color analysis.
+An Animal Crossing-inspired color vision test webapp for testing colorblindness, featuring authentic AC assets and scientific color analysis.
 
 ## 🎯 Purpose
 
-This webapp helps test for deuteranomaly (red-green colorblindness) in a fun, interactive way using Rover from Animal Crossing as your guide. Built as an anniversary gift, it combines scientific accuracy with authentic Animal Crossing charm.
+This webapp helps test for colorblindness in a fun, interactive way using Rover from Animal Crossing as your guide. Built as an anniversary gift, it combines scientific accuracy with authentic Animal Crossing charm.
 
 ## ✨ Features
 
@@ -65,7 +65,6 @@ This webapp helps test for deuteranomaly (red-green colorblindness) in a fun, in
 2. **Switch It Up!** - Toggle exploration mode to map all color regions
 3. **Live Confidence** - Watch your assessment confidence build in real-time
 4. **Infinite Testing** - Continue as long as you want for maximum precision
-5. **Love Letter & Technical Tabs** - Personal message + detailed algorithm info
 
 ## 🛠️ Tech Stack
 
@@ -109,7 +108,7 @@ This webapp helps test for deuteranomaly (red-green colorblindness) in a fun, in
 │   ├── Results.svelte            # Analysis and results
 │   ├── RoverModel.svelte         # 3D character component
 │   ├── ACDialogue.svelte         # Animated dialogue system
-│   └── InfoCard.svelte           # Love Letter + Technical tabs
+│   └── InfoCard.svelte           # Technical tabs
 ├── utils/
 │   ├── adaptiveBayesian.js       # NEW: Bayesian inference engine
 │   ├── colorSimulation.js        # Scientific algorithms
@@ -149,10 +148,6 @@ npm run format
 ```
 
 ## 🎨 Customization
-
-### Adding Anniversary Content
-
-Edit `/src/components/InfoCard.svelte` to add personal anniversary messages or memories.
 
 ### Character Selection
 
@@ -243,10 +238,3 @@ This project uses authentic Animal Crossing assets for educational and personal 
 - **Color Science**: Based on research by Brettel et al. and Machado et al.
 - **Adaptive Testing**: Inspired by jsQUEST and Bayesian psychometric methods
 - **Bayesian Inference**: Information gain optimization using entropy reduction
-- **Built with love** for understanding color vision through intelligent testing
-
-## 💕 For Ember
-
-Made with all my love for our special anniversary. Here's to understanding each other better, one color at a time! 🌈✨
-
-_"Always trust a smiling cat!"_ - Rover 🐱
