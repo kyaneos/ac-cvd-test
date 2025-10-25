@@ -1,0 +1,244 @@
+/**
+ * Animal Crossing Sprite CSS Classes
+ * Auto-generated sprite classes for authentic AC UI elements
+ */
+
+/* Button Sprites */
+.ac-button {
+	background-image: url('/assets/textures/hud.png');
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	transition: background-position 0.1s ease;
+	font-family: 'AC-Font', serif;
+	color: #2d4a3e;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+	font-weight: bold;
+}
+
+.ac-button-normal {
+	background-position: -10px -10px;
+	background-size: 224px 104px;
+	width: 80px;
+	height: 20px;
+	padding: 8px 16px;
+}
+
+.ac-button-hover:hover {
+	background-position: -10px -35px;
+	background-size: 224px 104px;
+}
+
+.ac-button-pressed:active {
+	background-position: -10px -60px;
+	background-size: 224px 104px;
+}
+
+/* Dialogue Box Sprites */
+.ac-dialogue-box {
+	background-image: url('/assets/textures/text.png');
+	background-repeat: no-repeat;
+	position: relative;
+	min-width: 280px;
+	min-height: 120px;
+	padding: 24px;
+	font-family: 'AC-Font', serif;
+	color: #2d4a3e;
+	line-height: 1.4;
+}
+
+/* 9-slice border system - DISABLED to prevent automatic sprite application */
+/*
+.dialogue-container {
+  position: relative;
+  display: inline-block;
+  min-width: 200px;
+  min-height: 80px;
+}
+
+.slice-corner_tl,
+.slice-corner_tr,
+.slice-corner_bl,
+.slice-corner_br,
+.slice-edge_top,
+.slice-edge_bottom,
+.slice-edge_left,
+.slice-edge_right,
+.slice-center {
+  position: absolute;
+  background-image: url('/assets/textures/text.png');
+  background-repeat: no-repeat;
+  background-size: 320px 288px;
+}
+
+.dialogue-tail {
+  position: absolute;
+  background-image: url('/assets/textures/text.png');
+  background-repeat: no-repeat;
+}
+*/
+
+/* Progress Bar Sprites */
+.ac-progress-container {
+	background-image: url('/assets/textures/hud.png');
+	background-position: -140px 0px;
+	background-size: 512px 256px;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 16px;
+	position: relative;
+}
+
+.ac-progress-fill {
+	background-image: url('/assets/textures/hud.png');
+	background-position: -140px -16px;
+	background-size: 512px 256px;
+	background-repeat: no-repeat;
+	height: 16px;
+	transition: width 0.3s ease;
+}
+
+/* AC Icon Sprites */
+.ac-icon {
+	background-image: url('/assets/textures/hud.png');
+	background-repeat: no-repeat;
+	background-size: 512px 256px;
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+}
+
+.ac-icon-bell {
+	background-position: -360px 0px;
+}
+
+.ac-icon-star {
+	background-position: -384px 0px;
+}
+
+.ac-icon-heart {
+	background-position: -408px 0px;
+}
+
+.character-icon {
+	background-image: url('/assets/textures/hud.png') !important;
+	background-position: -200px -5px !important;
+	background-size: 224px 104px !important;
+	width: 20px !important;
+	height: 25px !important;
+	display: inline-block !important;
+	vertical-align: middle !important;
+}
+
+.star-icon {
+	background-image: url('/assets/textures/hud.png') !important;
+	background-position: -150px -5px !important;
+	background-size: 224px 104px !important;
+	width: 16px !important;
+	height: 16px !important;
+	display: inline-block !important;
+	vertical-align: middle !important;
+	margin-right: 4px !important;
+}
+
+/* Input Box Sprites */
+.ac-input-container {
+	display: flex;
+	align-items: stretch;
+	min-height: 32px;
+}
+
+.ac-input-left {
+	background-image: url('/assets/textures/text.png');
+	background-position: -64px -256px;
+	background-size: 320px 288px;
+	width: 16px;
+	height: 32px;
+	background-repeat: no-repeat;
+}
+
+.ac-input-center {
+	background-image: url('/assets/textures/text.png');
+	background-position: -80px -256px;
+	background-size: 320px 288px;
+	height: 32px;
+	background-repeat: repeat-x;
+	flex: 1;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	padding: 8px;
+	font-family: 'AC-Font', serif;
+	color: #2d4a3e;
+}
+
+.ac-input-right {
+	background-image: url('/assets/textures/text.png');
+	background-position: -96px -256px;
+	background-size: 320px 288px;
+	width: 16px;
+	height: 32px;
+	background-repeat: no-repeat;
+}
+
+/* Utility Classes */
+.ac-text {
+	font-family: 'AC-Font', serif;
+	color: #2d4a3e;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.6);
+}
+
+.ac-text-large {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.ac-text-small {
+	font-size: 14px;
+}
+
+/* Animation Classes */
+.ac-fade-in {
+	animation: ac-fade-in 0.3s ease-in-out;
+}
+
+@keyframes ac-fade-in {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.ac-bounce {
+	animation: ac-bounce 0.6s ease-in-out;
+}
+
+@keyframes ac-bounce {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+}
+
+/* Override any conflicting styles */
+.ac-button,
+.ac-dialogue-box,
+.ac-progress-container,
+.ac-input-container {
+	box-shadow: none !important;
+	border-radius: 0 !important;
+}
+
+/* Ensure sprites render correctly */
+.ac-sprite {
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: crisp-edges;
+}
